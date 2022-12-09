@@ -11,10 +11,6 @@
     height: 345px;
 }
 
-/* img {
-    
-} */
-
 @media (max-width: 500px){
     .movieImage{
         width: 110%;
