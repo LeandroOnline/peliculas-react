@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
-import movies from "./movies.json";
+import movies from "../movies.json";
 import styles from "./MovieGrid.module.css"
 
 const MoviesGrid = () => {
