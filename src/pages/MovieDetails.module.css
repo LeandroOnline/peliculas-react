@@ -1,0 +1,19 @@
+.detail{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    max-width: 400px;
+    margin: 15px;
+    height: 90%;
+}
+
+.image{
+    border-radius: 10px;
+}
+
+.text{
+    font-size: 1.5rem;
+}

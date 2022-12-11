@@ -12,6 +12,10 @@
     height: 345px;
 }
 
+.movieImage:hover{
+    opacity: 60%;
+}
+
 @media (max-width: 500px){
     .movieImage{
         width: 90%;
