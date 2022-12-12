@@ -1,6 +1,6 @@
 import styles from "./search.module.css"
 import { FaSearch } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Search = () => {
@@ -10,6 +10,7 @@ const Search = () => {
     const handlerSubmit = (e) => {
         e.preventDefault()
         history("/?search=" + input)
+        setInput("")
     }
     
     return (
