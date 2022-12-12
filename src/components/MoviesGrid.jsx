@@ -25,13 +25,14 @@ const MoviesGrid = () => {
   }, [search]);
 
   if(isLoading) return <Loading/>;
+  // if(true) return <Loading/>;
 
   return (
-    <ul className={styles.movieGrid}>
+    <div className={styles.movieGrid}>
       {movies.map((movie) => (
         <MovieCard key={movie.id} movie={movie} />
       ))}
-    </ul>
+    </div>
   );
 };
 

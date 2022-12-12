@@ -3,7 +3,7 @@ import MoviesGrid from '../components/MoviesGrid';
 import Search from '../components/search';
 
 const LandingPage = () => {
-    return <div>
+    return <div >
             <Search/>
             <MoviesGrid/>
         </div>
