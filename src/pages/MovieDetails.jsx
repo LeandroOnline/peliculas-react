@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Get from '../utilities/get';
 import Loading from '../utilities/loading';
 import styles from "./MovieDetails.module.css";
@@ -28,6 +28,7 @@ const MovieDetails = () => {
                 <p><strong>Title: </strong>{movie.title}</p>
                 <p><strong>Description: </strong>{movie.overview}</p>
                 <strong>Genres: </strong>{movie.genres.map(genre=>genre.name ).join(", ")}
+                <Link to='/'><button>Volver</button></Link>
             </div>
         </div>
     );
