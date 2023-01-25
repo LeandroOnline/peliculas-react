@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.conteiner{
+.container{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -18,6 +18,16 @@
     padding-right: 10px;
     height: 60px;
     margin-top: 15px;
+}
+
+.container a{
+    color:rgb(140, 140, 140);
+}
+
+.container a:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgb(255, 234, 0);
+    transition: 0.4s;
 }
 
 .title{

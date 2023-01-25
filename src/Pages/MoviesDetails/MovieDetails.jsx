@@ -25,22 +25,26 @@ const MovieDetails = () => {
 
   return (
     <div className={styles.detail}>
-      <img className={styles.col + " " + styles.image} src={imageUrl} alt="" />
-      <div className={`${styles.col} ${styles.text}`}>
-        <p>
-          <strong>Title: </strong>
-          {movie.title}
-        </p>
-        <p>
-          <strong>Description: </strong>
-          {movie.overview}
-        </p>
-        <strong>Genres: </strong>
-        {movie.genres.map((genre) => genre.name).join(", ")}
-        <Link to="/">
-          <button>Volver</button>
-        </Link>
+      <div className={styles.row}>
+        <img className={styles.image} src={imageUrl} alt="" />
+        <div className={`${styles.col} ${styles.text}`}>
+          <p>
+            <strong>Title: </strong>
+            {movie.title}
+          </p>
+          <p>
+            <strong>Description: </strong>
+            {movie.overview}
+          </p>
+          <strong>Genres: </strong>
+          {movie.genres.map((genre) => genre.name).join(", ")}
+        </div>
       </div>
+
+      <Link to="/movies">
+        <button>Volver</button>
+      </Link>
+
     </div>
   );
 };

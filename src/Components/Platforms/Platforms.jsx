@@ -3,7 +3,7 @@ import styles from "./Platforms.module.css";
 const Platforms = () => {
   return (
     <div className={styles.column}>
-      <h1>Plataformas en JustMovies</h1>
+      <h1>platforms on JustMovies</h1>
       <div className={styles.container}>
         <img src="https://images.justwatch.com/icon/207360008/s100" alt="" />
         <img src="https://images.justwatch.com/icon/147638351/s100" alt="" />
