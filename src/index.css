@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Lato, Lato-fallback, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+    url(https://www.justwatch.com/appassets/img/home/global-home-bg-comp.png);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

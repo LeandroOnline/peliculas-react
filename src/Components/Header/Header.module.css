@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.container h1{
+    width: 80%;
+    font-size: 46px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: #999c9f;
+    width: 80%;
+    text-align: center;
+}

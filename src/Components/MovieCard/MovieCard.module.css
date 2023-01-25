@@ -1,0 +1,67 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* .movieCard{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(153, 3, 143, 0.463);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.1em;
+    
+} */
+.movieImage{
+    border-radius: 20px 20px 0px 0px;
+    background-color: azure;
+    width: 230px;
+    height: 345px;
+}
+
+/* .movieImage:hover{
+    opacity: 70%;
+} */
+
+@media (max-width: 500px){
+    .movieImage{
+        width: 90%;
+        height: auto;
+    }
+}
+
+.name{
+    text-align: center;
+} 
+
+.card {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(153, 3, 143, 0.463); */
+    font-family: 'Montserrat', sans-serif;
+    
+    background-image: linear-gradient(163deg, #00ff75 0%, #000000 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    /* width: 190px;
+    height: 254px; */
+    /* background-color: #1a1a1a; */
+    border-radius:20px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }

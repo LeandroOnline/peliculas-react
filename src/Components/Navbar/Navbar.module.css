@@ -1,0 +1,26 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.542);
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.title{
+    color:yellow;
+    text-shadow: 1px 1px 3px yellow;
+}

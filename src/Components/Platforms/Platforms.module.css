@@ -1,0 +1,24 @@
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: #616365;
+    width: 80%;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container img{
+    border-radius: 10px;
+    width: 50px;
+}
