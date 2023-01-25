@@ -9,7 +9,7 @@ const MovieCard = ({movie}) => {
             <NavLink to={"/movies/" + movie.id}>
                 <li className={styles.card2}>
                     <img className={styles.movieImage} src={imageUrl} alt="" />
-                    <div className={styles.name}>{movie.title}</div>
+                    {/* <div className={styles.name}>{movie.title}</div> */}
                 </li>
             </NavLink>
         </div>
