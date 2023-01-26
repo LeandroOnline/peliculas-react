@@ -10,7 +10,6 @@ const Navbar = () => {
         <Link to='/'><h1 className={styles.title}>JustMovies</h1></Link>
         <Link to="/">Home</Link>
         <Link to="/movies">Movies</Link>
-        <Link to="/watchlist">Watchlist</Link>
         <Search />
       </div>
     </div>
