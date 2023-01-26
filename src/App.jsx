@@ -5,8 +5,8 @@ import LandingPage from "./Pages/Landing/LandingPage";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 
+//app ready
 function App() {
-
   return (
       <BrowserRouter>
         <Navbar />
