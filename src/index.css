@@ -24,7 +24,6 @@ a {
 @media (max-width: 730px) {
   body{
     height: 100%;
-    background: none;
     background-color: rgb(33, 33, 33);
   }
 }
