@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 210px);
   gap: 15px;
+  top: 0;
   justify-content: center;
   margin: 15px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 730px) {
   .movieGrid {
-    grid-template-columns: 100%;
+    margin-top: 60px;
   }
 }

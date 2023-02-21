@@ -21,3 +21,13 @@
     width: 80%;
     text-align: center;
 }
+
+@media (max-width: 730px){
+    .container h1{font-size: 25px;}
+    .container h2{font-size: 15px;}
+    .container {
+        position: relative;
+        top: 0;
+        height: 100vh;
+    }
+}
