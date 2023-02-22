@@ -15,12 +15,12 @@ const MoviesGrid = () => {
 
   const query = useQuery();
   const search = query.get("search");
-  
+
   useEffect(() => {
     setLoading(true);
     const searchUrl = search
       ? "/search/movie?query=" + search
-      :"/discover/movie";
+      : "/discover/movie";
 
     Get(searchUrl).then((data) => {
       setMovies(data.results);

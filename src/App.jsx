@@ -5,17 +5,16 @@ import LandingPage from "./Pages/Landing/LandingPage";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 
-//app ready
 function App() {
   return (
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/movies" element={<LandingPage />} />
-          <Route path="/movies/:movieId" element={<MovieDetails />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/movies" element={<LandingPage />} />
+        <Route path="/movies/:movieId" element={<MovieDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

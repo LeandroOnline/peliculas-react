@@ -1,4 +1,3 @@
-// import React from 'react';
 const API = "https://api.themoviedb.org/3";
 
 const Get = (path) => {

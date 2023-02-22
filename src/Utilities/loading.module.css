@@ -1,79 +1,75 @@
 .container {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
   margin-top: 2em;
   width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .loader {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15em;
-    height: 15em;
-    font-size: 10px;
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+  height: 15em;
+  justify-content: center;
+  position: relative;
+  width: 15em;
+}
+
+.loader .face {
+  animation: animate023845 3s linear infinite;
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.loader .face:nth-child(1) {
+  animation-direction: normal;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  color: gold;
+  height: 100%;
+  width: 100%;
+  --deg: -45deg;
+}
+
+.loader .face:nth-child(2) {
+  animation-direction: reverse;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0em 0em 0.2em;
+  color: lime;
+  height: 70%;
+  width: 70%;
+  --deg: -135deg;
+}
+
+.loader .face .circle {
+  background-color: transparent;
+  left: 50%;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: rotate(var(--deg));
+  transform-origin: left;
+  width: 50%;
+}
+
+.loader .face .circle::before {
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 2em, 0 0 4em, 0 0 6em, 0 0 8em, 0 0 10em,
+    0 0 0 0.5em rgba(255, 255, 0, 0.1);
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+  height: 1em;
+  width: 1em;
+}
+
+@keyframes animate023845 {
+  to {
+    transform: rotate(1turn);
   }
-  
-  .loader .face {
-    position: absolute;
-    border-radius: 50%;
-    border-style: solid;
-    animation: animate023845 3s linear infinite;
-  }
-  
-  .loader .face:nth-child(1) {
-    width: 100%;
-    height: 100%;
-    color: gold;
-    border-color: currentColor transparent transparent currentColor;
-    border-width: 0.2em 0.2em 0em 0em;
-    --deg: -45deg;
-    animation-direction: normal;
-  }
-  
-  .loader .face:nth-child(2) {
-    width: 70%;
-    height: 70%;
-    color: lime;
-    border-color: currentColor currentColor transparent transparent;
-    border-width: 0.2em 0em 0em 0.2em;
-    --deg: -135deg;
-    animation-direction: reverse;
-  }
-  
-  .loader .face .circle {
-    position: absolute;
-    width: 50%;
-    height: 0.1em;
-    top: 50%;
-    left: 50%;
-    background-color: transparent;
-    transform: rotate(var(--deg));
-    transform-origin: left;
-  }
-  
-  .loader .face .circle::before {
-    position: absolute;
-    top: -0.5em;
-    right: -0.5em;
-    content: '';
-    width: 1em;
-    height: 1em;
-    background-color: currentColor;
-    border-radius: 50%;
-    box-shadow: 0 0 2em,
-                  0 0 4em,
-                  0 0 6em,
-                  0 0 8em,
-                  0 0 10em,
-                  0 0 0 0.5em rgba(255, 255, 0, 0.1);
-  }
-  
-  @keyframes animate023845 {
-    to {
-      transform: rotate(1turn);
-    }
-  }
+}

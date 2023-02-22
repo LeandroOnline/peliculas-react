@@ -5,7 +5,7 @@ import Loading from "../../Utilities/loading";
 import styles from "./MovieDetails.module.css";
 
 const MovieDetails = () => {
-  const { movieId } = useParams(); //es el parametro que esta en la ruta especificada en App
+  const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
@@ -44,7 +44,6 @@ const MovieDetails = () => {
       <Link to="/movies">
         <button>Volver</button>
       </Link>
-
     </div>
   );
 };
